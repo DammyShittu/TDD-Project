@@ -16,5 +16,11 @@ describe Solver do
   solve = Solver.new
   five_factorial = solve.factorial(5)
   expect(five_factorial).to be 120
-end
+  end
+
+  it "checks if number is negative give exception" do
+    solve = Solver.new
+    negative_num = solve.factorial(-5)
+    expect(negative_num).to eql "Factorial of negative number can't be calculated"
+  end
 end
