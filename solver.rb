@@ -2,17 +2,18 @@ class Solver
 
   def factorial(num)
     num_factorial = 1
-    if(num < 0) 
+    if(num < 0)
       "Factorial of negative number can't be calculated"
     else
       (1..num).each {|p| num_factorial *= p}
       num_factorial
-    end 
+    end
   end
 
-  def reverse
+  def reverse(string)
+    split_str = string.downcase.split('')
+    reverse_str = []
+    split_str.each { |str| reverse_str.unshift(str) }
+    reverse_str.join('')
   end
 end
-
-solver = Solver.new
-puts solver.factorial(-5)
