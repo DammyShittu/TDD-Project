@@ -62,7 +62,7 @@ describe Solver do
 
     it 'returns number if number is not divisible by 3 or 5' do
       num = @solve.fizzbuzz(19)
-      expect(num).to be 19
+      expect(num).to eql '19'
     end
   end
 end

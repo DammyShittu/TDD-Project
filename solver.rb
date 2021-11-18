@@ -24,7 +24,7 @@ class Solver
     elsif (num % 3).zero?
       'fizz'
     else
-      num
+      num.to_s
     end
   end
 end
